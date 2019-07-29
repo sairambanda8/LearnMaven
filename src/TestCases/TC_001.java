@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class TC_001 {
 	@Test
-	public void setup() {
+	public void setup1() {
 		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		 
 
@@ -28,7 +28,8 @@ public class TC_001 {
 		dropdown_year.selectByValue("1950");
 		driver.findElement(By.cssSelector("button.btn.btn--outline")).click();;
 		driver.findElement(By.cssSelector("span.checkbox")).click();
-		driver.findElement(By.cssSelector("button.btn.btn--outline")).click();;    
+		driver.findElement(By.cssSelector("button.btn.btn--outline")).click();; 
+		driver.quit();
 
 		 
 		}
